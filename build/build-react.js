@@ -81,6 +81,15 @@ const buildReact = async () => {
   await exec(
     `MODULES=esm npx babel --config-file ./build/babel-react.config.js package/react/esm --out-dir package/react/esm --ignore "*.ts"`,
   );
+
+  const types = `import React from "react"
+
+${components
+  .map(({ name }) => `export const ${name}: React.FunctionComponent<React.SVGProps<SVGElement>>`)
+  .join('\n')}
+`;
+
+  fs.writeFileSync(path.resolve(__dirname, '../package/react/index.d.ts'), types);
 };
 
 module.exports = buildReact;

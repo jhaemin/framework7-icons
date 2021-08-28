@@ -5,11 +5,11 @@ const buildVue = require('./build-vue');
 const buildSvelte = require('./build-svelte');
 
 const build = () => {
-  buildFont();
-  copySvg();
+  // buildFont();
+  // copySvg();
   buildReact();
-  buildSvelte();
-  buildVue();
+  // buildSvelte();
+  // buildVue();
 };
 
 build();

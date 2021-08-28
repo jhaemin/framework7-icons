@@ -3,6 +3,7 @@
 npm-debug.log
 node_modules
 package/react/*.js
+package/react/*.ts
 package/react/esm/*.js
 package/react/cjs/*.js
 package/vue/*.js

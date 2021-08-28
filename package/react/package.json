@@ -4,5 +4,6 @@
   "main": "./framework7-icons-react.cjs.js",
   "jsnext:main": "./framework7-icons-react.esm.js",
   "module": "./framework7-icons-react.esm.js",
+  "types": "./index.d.ts",
   "sideEffects": false
 }
