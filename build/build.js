@@ -6,7 +6,7 @@ const buildSvelte = require('./build-svelte');
 
 const build = () => {
   // buildFont();
-  // copySvg();
+  copySvg();
   buildReact();
   // buildSvelte();
   // buildVue();
