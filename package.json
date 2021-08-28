@@ -1,11 +1,11 @@
 {
-  "name": "framework7-icons",
-  "version": "5.0.3",
+  "name": "framework7-icons-extended",
+  "version": "1.0.0-beta.1",
   "description": "Free iOS-icons font for Framework7",
   "main": "css/framework7-icons.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/framework7io/framework7-icons.git"
+    "url": "https://github.com/jhaemin/framework7-icons.git"
   },
   "keywords": [
     "fonts",
@@ -16,10 +16,10 @@
     "ios",
     "ios icons"
   ],
-  "author": "Vladimir Kharlampidi",
+  "author": "Jang Haemin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/framework7io/framework7-icons/issues"
+    "url": "https://github.com/jhaemin/framework7-icons/issues"
   },
   "homepage": "https://framework7.io/icons/",
   "engines": {

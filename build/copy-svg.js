@@ -17,5 +17,11 @@ const copySvg = () => {
       path.resolve(__dirname, `../package/svg/${file}`),
     );
   });
+  fs.readdirSync(path.resolve(__dirname, '../src/custom')).forEach((file) => {
+    fs.copyFileSync(
+      path.resolve(__dirname, `../src/custom/${file}`),
+      path.resolve(__dirname, `../package/svg/${file}`),
+    );
+  });
 };
 module.exports = copySvg;
