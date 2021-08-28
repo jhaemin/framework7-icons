@@ -1,3 +1,9 @@
+# Framework7 Icons+
+
+It contains extra icons.
+
+---
+
 <a href="https://www.patreon.com/framework7"><img src="https://framework7.io/i/support-badge.png" height="20"></a>
 
 # Framework7 Icons
