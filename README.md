@@ -2,6 +2,26 @@
 
 It contains extra icons.
 
+```bash
+$ npm install framework7-icons-plus
+```
+
+> It only supports React SVG components.
+
+```tsx
+import { Circlebadge, Group, WrenchAndScrewdriver } from 'framework7-icons-plus/react';
+
+const Component = () => {
+  return (
+    <div>
+      <Circlebadge />
+      <Group fill="blue" />
+      <WrenchAndScrewdriver style={{ fontSize: 40 }} />
+    </div>
+  );
+};
+```
+
 ---
 
 <a href="https://www.patreon.com/framework7"><img src="https://framework7.io/i/support-badge.png" height="20"></a>
