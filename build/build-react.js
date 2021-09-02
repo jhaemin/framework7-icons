@@ -26,8 +26,16 @@ const buildReact = async () => {
 
       let content = fs
         .readFileSync(path.resolve(__dirname, '../package/svg', file), 'utf-8')
+        .replace(/fill="black"/gi, '')
+        .replace(/fill="none"/gi, '')
         .replace(/<svg ([^>]*)>/, (tag, attrs) => {
-          attrs = attrs.replace('width="56"', 'width="1em"').replace('height="56"', 'height="1em"');
+          const width = Number(attrs.match(/width="([0-9]*)"/)[1]);
+          const height = Number(attrs.match(/height="([0-9]*)"/)[1]);
+          const heightEM = height / 56;
+          const ratio = width / height;
+          attrs = attrs
+            .replace(/height=".*?"/, `height="${heightEM}em"`)
+            .replace(/width=".*?"/, `width="${heightEM * ratio}em"`);
           return `<svg fill="currentcolor" ${attrs} {...attrs}>`;
         })
         .replace(/([A-Za-z-]*)="([^"]*)"/g, (pair, key, value) => {
